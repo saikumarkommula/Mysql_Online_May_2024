@@ -1,0 +1,127 @@
+ DATA BASE :
+-----------------------------
+. FRUIITS and vegi.. -> fi
+apple - insert
+apple - retrive/fetching
+banana-  insert -> apple-update
+
+delete- 
+
+-------------
+CRUD :
+---------
+C- CREATE 
+R-READ
+U-UPDATE
+D-DELETE
+---------------------------
+USERNAME : root
+password : root
+--------------------------------
+
+java - codind -c,c++,php, (programming languages) ;
+
+Sql -
+---------
+Structured query language
+query : asking/requesting for somthing
+IT IS not a casesensitive
+
+sql commands:
+----------------------
+
+1.how to create database
+  create : database,tables..
+
+  syntax:
+  create database database_name;
+example :
+ create database learning0nline;
+
+2. which databse do you want
+ 
+syntax ; use database_name
+ex : use learningOnline
+
+3. create table in side the database
+
+syntax :
+ create table table_name
+(
+  column_name datatype
+    column_name datatype
+ column_name datatype
+ 
+)
+
+String -- varchar(30)
+
+----------------------------------------------------------------------
+
+create database learningOnline;
+
+CREATE DATABASE MANGO;
+CREATE DATABASE school;
+
+use learningOnline;
+
+create table sql_students
+(
+ id int,
+ name varchar(30),
+ address varchar(60)
+
+ );
+ 
+ CREATE TABLE employee(
+ eid int,
+ ename varchar(30)
+ );
+ 
+-------------------------
+4.
+ 
+use database_name
+show tables;
+ 
+ -------------------------------------------------
+
+create database learningOnline;
+
+CREATE DATABASE MANGO;
+CREATE DATABASE school;
+
+use learningOnline;
+
+create table sql_students
+(
+ id int,
+ name varchar(30),
+ address varchar(60)
+
+ );
+ 
+ CREATE TABLE employee(
+ eid int,
+ ename varchar(30)
+ );
+ 
+show tables;
+ show tables;
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+

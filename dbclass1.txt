@@ -1,0 +1,53 @@
+ Data Base :
+---------------------
+
+
+data :
+--------------
+username
+password
+phone number
+email
+house adress
+
+-------------------------------
+
+data : small volume of collection of facts and figures
+
+Data Base :
+-----------------
+
+1. Ram -- faster in execution --  no permanent storage 
+
+2. DataBase -- slower in execution -- permanent storage 
+
+ * permanent storage *
+
+  * faster in execution *
+
+-------------------------------
+
+why we are using database :
+------------------------------------------
+ * permanent storage *
+  * faster in execution *
+
+Creation of DataBASE :
+----------------------
+
+DataBase : Database is a collection of large volume of facts and figures ;
+
+
+
+1.create DataBase 
+2.Use DATABASE
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+ 
+
