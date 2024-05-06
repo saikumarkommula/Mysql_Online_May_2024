@@ -1,0 +1,22 @@
+creation of databse - CREATE
+create databse database_name;
+creation of tables
+create table table_name;
+---------------------------------
+1.creation of database
+2.use of databse
+3.creation of tables
+4.show tables inside the databse
+------------------------------------
+
+5.Insertion of data into tables : INSERT
+--------------------------------------------
+
+EXAMPLE ;
+---------------
+SYNTAX :
+
+INSERT INTO table_name(column1,columns...)values('sai',101,bengaluru);
+
+
+
