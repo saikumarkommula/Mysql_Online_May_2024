@@ -1,0 +1,74 @@
+please check my voice is audible or not
+give me reply in chat box
+
+sql commands :
+-------------------------
+CRUD  Operations :
+--------------------------------
+1. how to create databse : 
+    create database learning;
+2.activate databse
+use learning;
+3.
+create table student
+( id int,
+name varchar(30)
+);
+
+4. COLUMN NAMES ONLY CASESENSITIVE
+
+Insertion of data into table :
+insert into student (id,name)values(101,"hardhik");
+insert into student (id,name)values(102,"Rohit");
+insert into student (id,name)values(103,"virat");
+
+or
+insert into student (id,name)values(101,"hardhik")(102,"Rohit")(103,"virat");
+
+---------------------------------------------------------------------------------------------------------------------------
+create database  learningschool;
+
+use learningschool;
+
+create table student_details
+(
+ id int,
+ name varchar(30)
+ );
+ 
+ Insert into STUDENT_DETAILS(id,name)values(2001,"prabhas");
+  Insert into STUDENT_DETAILS(id,name)values(2001,"prabhas");
+  
+  
+   Insert into STUDENT_DETAILS(id,name)values(2003,"prabhas"),(2004,"aj"),(2005,"nikil");
+-----------------------------------------------------------------------------------------------------------------
+DataTypes in Sql :
+---------------------------
+Datatypes are used to tells the columns which type f data can be stores
+
+java : int,float,double,byte,char,String,boolean,short
+
+number/int
+char(size)
+varchar(size)
+date ;
+mysql : 
+INSERT INTO TABLE_NAME(date)values('2024-05-08');
+oracle :
+INSERT INTO TABLE_NAME(date)values('08-05-2024');
+
+char(size) varchar(size)
+char(100) varchar(100)
+char(20) varchar(20)
+-----------------------------------------------------------------
+use learningschool;
+create table manager
+( mid int,
+mname varchar(20),
+joindate date
+);
+insert into manager(mid,mname,joindate)values(101,"mounika",'2015-04-10');
+select * from manager;
+insert into manager(mid,mname,joindate)values(103,"nikil",'2016-04-10'),(102,"suhas",'2017-04-10');
+-----------------------------------------------------------------------------------------------------------------
+
