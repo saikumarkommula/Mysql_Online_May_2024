@@ -1,0 +1,16 @@
+CLASS 5 :
+--------------
+use learningschool;
+create table manager
+( mid int,
+mname varchar(20),
+joindate date
+);
+insert into manager(mid,mname,joindate)values(101,"mounika",'2015-04-10');
+select * from manager;
+insert into manager(mid,mname,joindate)values(103,"nikil",'2016-04-10'),(102,"suhas",'2017-04-10');
+
+select mname from manager;
+select mid from manager;
+select mname,joindate from manager;
+-------------------------------------------------------------------------------

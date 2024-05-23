@@ -1,0 +1,37 @@
+Write a query to display name from the childrens table. 
+Write a query to display age from the childrens table. 
+Write a query to display name, age, gender from the childrens table
+Write a query to display all the data from childrens table.  
+Write a query to display name of childrens whose age is 22. 
+Write a query to display details of the childrens whose gender is male. 
+Write a query to display details of childrens who scored greater than 60 marks.
+-----------------------------------------------------------------------------------------------------------------
+use onlinebatch6;
+create table childrens
+( name varchar(30),
+ age int,
+ gender varchar(10),
+ marks int);
+ 
+ select * from childrens;
+ 
+ insert into childrens(name,age,gender,marks)values('virat',21,'male',94),('dhoni',22,'male',43),('rohit',23,'male',67),('Smithi',25,'female',78);
+ 
+ select name from childrens;
+ 
+ select age from childrens;
+ select name,age,gender from childrens;
+ 
+ select * from childrens;
+ select name,age,gender,marks from childrens;
+ 
+ select name from  childrens where age=22;
+ select name from  childrens where age=21;
+ select name from  childrens where age=25;
+ 
+ select marks from childrens where gender='male';
+ select * from childrens where gender='male';
+ 
+ select * from childrens where marks>60;
+  select * from childrens where marks<60;
+--------------------------------------------------------------------------------
