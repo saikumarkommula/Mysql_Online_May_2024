@@ -1,0 +1,40 @@
+Check :
+----------------
+
+use onlinebatch6;
+
+create table StudentCheck
+( id int,
+name varchar(50),
+age int check(age>18),
+marks int,
+inististute varchar(60)
+);
+
+insert into StudentCheck(id,name,age,marks,inististute)values(501,'kalyan',19,560,'pts');
+insert into StudentCheck(id,name,age,marks,inististute)values(502,'kalyan',20,560,'pts');
+select * from studentcheck;
+
+---------------------------------------------------------------------------------
+
+Foreign Key :
+----------------------
+use onlinebatch6;
+
+Create table Department_foreign
+( did int primary key,
+dname varchar(20)
+);
+create table employee_foreign
+( eid int,
+ename varchar(30),
+did int,
+foreign key(did)references department_foreign(did)
+);
+
+insert into department_foreign(did,dname)values(601,'mechanical'),(602,'cse'),(603,'ece');
+select * from department_foreign;
+insert into employee_foreign(eid,ename)values(701,'akhil'),(702,'raju'),(703,'rani');
+select * from employee_foreign; 
+
+
