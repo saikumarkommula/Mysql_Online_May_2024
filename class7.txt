@@ -1,0 +1,93 @@
+Constraints :(retrictions or rules) 
+------------------
+
+1.unique
+2.not null
+3.check
+4.default
+5.primary key (unique+not null)
+6.Foreign key 
+
+1.unique :
+--------------
+ * it will not allows duplicate values
+* it will allows only unique values
+
+use onlinebatch6;
+
+create table StudentBasic
+( id int unique,
+name varchar(30),
+age int,
+inististute varchar(100)
+);
+
+insert into StudentBasic(id,name,age,inististute)values(102,'harish',34,'pts');
+select * from StudentBasic;
+insert into StudentBasic(id,name,age,inististute)values(102,'harish',34,'pts'),(103,'hari',35,'pts');
+
+------------------------------------------------------------------------------------------
+Not Null :
+---------------
+1.it allows duplicate values
+2. it can not have null values.
+
+
+use onlinebatch6;
+
+create table NotNullTable
+( id int not null,
+name varchar(30),
+age int,
+inististute varchar(100)
+);
+
+Insert into NotnullTable(id,name,age,inististute)values(202,'harika',43,'jntuk');
+select * from NotNullTable;
+Insert into NotnullTable(id,name,age,inististute)values(202,'harika',43,'jntuk');
+-------------------------------------------------------------------------------------------------------------------------
+Primary Key :
+----------------------
+* combination of both unique and notnull  constraints
+ null !=null
+null != 0
+null +5 =null
+*it canot have duplicate values and cannot have null values
+* we can have only one primary key in the table
+* the table with primary key is called parent table
+
+it will not allows duplicate values
+it will allows unique values
+it will not allows null values
+-----------
+use onlinebatch6;
+
+create table PrimaryKeyTable
+( id int Primary Key,
+name varchar(20),
+age int,
+inististute varchar(50)
+);
+
+insert into PrimaryKeyTable(id,name,age,inististute)values(301,'karthik',45,'pts');
+select * from Primarykeytable;
+insert into PrimaryKeyTable(id,name,age,inististute)values(302,'karthik',45,'pts');
+insert into PrimaryKeyTable(id,name,age,inististute)values(303,'sai',45,'pts');
+----------------------------------------
+Default :
+-----------------
+
+use onlinebatch6;
+
+create table Defalut
+( id int,
+name varchar(30),
+age int,
+marks int,
+inististute varchar(50) default 'purna tech solutions'
+);
+insert into Defalut(id,name,age,marks)values(401,'akash',34,456);
+select * from Defalut;
+insert into Defalut(id,name,age,marks)values(402,'prabhas',35,556);
+--------------------
+
