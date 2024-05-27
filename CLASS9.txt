@@ -1,0 +1,85 @@
+1.	Arithmetic	Operators:
+-----------------------------------------------------------
+	
+Write	a	query	to	display	employee	id,	employee	first	name,	employee	last	name	and	salary	
+from	emp	table	by	increasing	the	salary	of	1000rs.	
+
+ select emp_id,f_name,l_name,salary+1000
+from emp;
+-----------------------------------------------------------
+Write	a	query	to	display	employee	id,	email	id,	phone	number	and	salary	from	the	employee	
+table	by	reducing	the	salary	of	1000rs.
+
+select emp_id,email,phone_number,salary-1000
+from emp;
+-----------------------------------------------------------
+Write	a	query	to	display	employee	id,	job	id,	department	id	and	salary	by	giving	hike	of	10	
+Percent
+select emp_id,job_id,dept_id,salary+(salary*0.10) from emp;
+.-----------------------------------------------------------
+Write	a	query	to	display	employee	id,	job	id,	department	id	and	salary	by	reducing	the	salary	
+of	20	percent.	
+-----------------------------------------------------------
+
+Write	a	query	to	display	half	yearly	salary.	
+-----------------------------------------------------------
+2	.Relational	Operators:	
+ * Write	a query	to	display	the	details	of	employee	whose	first	name	is	Akash.	
+select * 
+from emp
+where f_name='Akash';
+
+ * Write	a	query	to	display	the	details	of	employees	whose	department	id	is	greater	than	30.	
+select *
+from emp
+where dept_id>30;
+
+ * Write	a	query	to	display	details	of	employees	whose	salary	is	less	than	10000	from	emp	table.	
+
+select * from emp where salary<10000;
+	
+* Write	a	query	to	display	email	id,	phone	number 	whose	commission	percentage	is	greater	than	or	equal	to	5	from	emp	table.	
+
+select email,phone_number from emp where commission_pct >= 1;
+
+* Write	a	query	to	display	emp	id,	f_name,	l_name	from	emp	table	whose	salary	is	less	than	or	equal	to	34000.
+select emp_id,f_name,l_name from emp where salary <= 34000;
+
+* 	Write	a	query	to	display	the	details	of	employees	who	is	not	clerk	(ST_CLERK	)	from	emp	table.
+
+select * from emp 
+where job_id != 'ST_CLERK';
+
+-----------------------------------------------------------------------------------------------------------3
+Concatenation	Operator:	
+Write	a	query	to	concatenate	f_name	and	l_name	from	emp	table	and	display	it	as	full	name	
+Write	a	query	to	concatenate	Sachin	and	Tendulkar	and	display	it	as	full	name.	
+----------------------------------------------------------------------------------------
+CONSTRAINTS 	
+Types	of	Constraints:	
+
+1.	Not	null:	
+2.	Unique:	
+3.	Check:	
+4.	Default:	
+5.	Primary	key:	
+6.	Foreign	key:	
+------------------------------------------
+use onlinebatch6;
+
+select * from emp;
+select * from dept;
+select * from j_grade;
+
+select emp_id,f_name,l_name,salary+1000
+from emp;
+
+select emp_id,email,phone_number,salary-1000
+from emp;
+
+select emp_id,job_id,dept_id,salary+(salary*0.10) from emp;
+
+select emp_id,job_id,dept_id,salary-(salary*0.20) from emp;
+
+select salary from emp;
+
