@@ -1,0 +1,10 @@
+Keywords as Operators ;
+----------------------------------------
+distinct :
+-------------
+1.write a query to display unique dept-id from emp_table
+ select distinct salary from emp;
+
+2.display distinct salaries from emp;
+select distinct salary from emp;
+

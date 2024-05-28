@@ -51,9 +51,18 @@ select * from emp
 where job_id != 'ST_CLERK';
 
 -----------------------------------------------------------------------------------------------------------3
-Concatenation	Operator:	
-Write	a	query	to	concatenate	f_name	and	l_name	from	emp	table	and	display	it	as	full	name	
-Write	a	query	to	concatenate	Sachin	and	Tendulkar	and	display	it	as	full	name.	
+Concatenation	Operator:	 ||
+
+1.Write	a	query	to	concatenate	f_name	and	l_name	from	emp	table	and	display	it	as	full	name
+
+select f_name,l_name,f_name || l_name as "full name" from emp;
+	
+2.Write	a	query	to	concatenate	Sachin	and	Tendulkar	 and	display	it	as	full	name.
+
+select f_name,l_name,f_name || l_name as "full name" from emp;
+
+
+select 'sachin'||'Tendulkar' as 'full name' from dual;	
 ----------------------------------------------------------------------------------------
 CONSTRAINTS 	
 Types	of	Constraints:	
@@ -82,4 +91,65 @@ select emp_id,job_id,dept_id,salary+(salary*0.10) from emp;
 select emp_id,job_id,dept_id,salary-(salary*0.20) from emp;
 
 select salary from emp;
+-----------------------------------------------------
+Alias Keyword in Sql :
+----------------------------------
+we canb represent alias keyword => as 
+1.write a query to conactinate 111 and 222 and display as fullnumber
+
+Dual Table in sql :(Dummy table)
+--------------------------------
+from dual
+
+-------------------------------------------------------------
+use onlinebatch6;
+
+
+select * from emp;
+select * from dept;
+select * from j_grade;
+
+select emp_id,f_name,l_name,salary+1000
+from emp;
+
+select emp_id,email,phone_number,salary-1000
+from emp;
+
+select emp_id,job_id,dept_id,salary+(salary*0.10) from emp;
+
+select emp_id,job_id,dept_id,salary-(salary*0.20) from emp;
+
+select salary from emp;
+select * 
+from emp
+where f_name='Akash';
+
+select *
+from emp
+where dept_id>30;
+
+select * from emp where salary<10000;
+
+select email,phone_number from emp where commission_pct >= 1;
+
+select emp_id,f_name,l_name from emp where salary <= 34000;
+
+select * from emp 
+where job_id != 'ST_CLERK';
+
+select f_name,l_name,f_name || l_name as "full name" from emp;
+
+
+select 'sachin'||'Tendulkar' as 'full name' from dual;
+
+select 111||222 as "full number" from dual;
+select 'sai'||777  from dual;
+
+select f_name,l_name,salary*12 as LpA
+ from emp;
+
+select * from dual;
+select salary from emp;
+select distinct dept_id from emp;
+select distinct salary from emp;
 
