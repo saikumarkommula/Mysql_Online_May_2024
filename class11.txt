@@ -1,0 +1,32 @@
+Order By Clause :
+----------------------
+sysntax ;
+--------------
+select column_names
+from table_name
+where condition
+order by column_name(asc)or(desc)
+
+1.write a query to display hire date from the oldest date to the newest date 
+
+select hire_date
+from emp
+order by hire_date asc;
+
+2.write a query to display salaries of employees in descending order
+ select salay
+from emp
+order by salary desc;
+
+3.write a query to display commission_pct in ascending order.
+
+select commission_pct
+from emp
+order by commission_pct asc;
+
+
+4.write a query to display commission_pct in descending order
+
+select commission_pct
+from emp
+order by commission_pct desc;
