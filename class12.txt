@@ -1,0 +1,71 @@
+class 12 :
+--------------
+Data Definition Language : (DDL)
+-----------------------
+CREATE
+ALTER
+TRUNCATE
+DROP
+
+ALTER ;
+----------------
+Alter command is used to alter or modify the structure of the table.
+
+1.adding a column to an existing table
+  syntax ;
+ alter table table_name
+ add column_name data_type;
+
+example ;
+-----------------
+use onlinebatch6;
+
+create table bank
+( bid int,
+bname varchar(20),
+bhq varchar(20)
+);
+select * from bank;
+insert into bank values(101,'State bank of India','delhi');
+insert into bank values(102,'kotak mahindra bank','mumbai');
+
+alter table bank
+add phone_no numeric;
+insert into bank values(103,'karnataka  bank','Bangaluru',7894561232);
+--------------------
+Dropping a column from an existing table :
+----------------------------------------------------------
+syntax ;
+-----------
+ alter table table_name
+ drop  column column_name 
+example :
+---------------
+
+alter table bank
+drop column phone_no;
+---------------------------------------------------------------
+Rename a column :
+----------------------
+syntax: 
+alter table table_name
+rename column old_column_name to new_column-name
+
+example :
+--------------
+alter table bank
+rename column bhq to bank_head_quarters;
+
+--------------------------------------------------------------------------------------
+Rename a table :
+-------------------------
+syntax ;
+-------------
+alter table old_table_name
+rename to new_table_name; 
+
+
+alter table bank
+rename to customer_bank_details;
+select * from customer_bank_details;
+select * from bank
